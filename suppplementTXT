@@ -1,0 +1,23 @@
+import app0.Todo
+
+def todo = new Todo(subject:"test")
+todo.save()
+
+
+import app0.Todo
+
+def todo = Todo.get(1)
+println todo.subject
+
+import app0.Todo
+
+def todo = Todo.get(1)
+todo.subject = "changed"
+todo.save()
+
+import app0.Todo
+import app0.TaskList
+
+def taskList = new TaskList(name:"my list").save()
+taskList.addToTasks(new Todo(subject:"doing test"))
+taskList.save()
