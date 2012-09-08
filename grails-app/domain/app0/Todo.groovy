@@ -6,6 +6,7 @@ class Todo {
     Date dueDate
     Integer priority
     String description
+
     static constraints = {
         subject()
         dueDate()
