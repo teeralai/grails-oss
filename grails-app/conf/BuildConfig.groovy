@@ -52,5 +52,8 @@ grails.project.dependency.resolution = {
         runtime ":database-migration:1.1"
 
         compile ':cache:1.0.0'
+
+        runtime ":jquery:1.7.1"
+        compile ":kendo-ui:1.0.0"
     }
 }

@@ -6,13 +6,17 @@ class Todo {
     Date dueDate = new Date()
     Integer priority =1
     String description =""
-
+    String personId
     TaskList taskList
 
     static constraints = {
-        subject()
-        dueDate()
-        priority()
-        description(size:0..1000)
+       // subject()
+       // dueDate()
+       // priority()
+       // description(size:0..1000)
+
+       personId(size:13..13, matches:/\d{13}/)
+
+
     }
 }
