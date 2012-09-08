@@ -2,10 +2,10 @@ package app0
 
 class Todo {
 
-    String subject
-    Date dueDate
-    Integer priority
-    String description
+    String subject = "abc"
+    Date dueDate = new Date()
+    Integer priority =1
+    String description =""
 
     static constraints = {
         subject()
