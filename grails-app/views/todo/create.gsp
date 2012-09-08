@@ -7,6 +7,16 @@
 		<title><g:message code="default.create.label" args="[entityName]" /></title>
 	</head>
 	<body>
+    <script>
+        $(document).ready(function(){
+            $("priority").kendoNumericTextBox({
+                format: "ความสำคัญ: 0",
+                min: 1,
+                max: 3,
+                step: 1
+            });
+        });
+    </script>
 		<a href="#create-todo" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div class="nav" role="navigation">
 			<ul>
