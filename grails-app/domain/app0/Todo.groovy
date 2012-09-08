@@ -8,6 +8,7 @@ class Todo {
     String description =""
 
     TaskList taskList
+
     static constraints = {
         subject()
         dueDate()
